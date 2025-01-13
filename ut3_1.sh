@@ -11,7 +11,7 @@ despedida(){
 buscarNumero(){
     while [[ true ]]; do
         clear
-        echo -e "\nIndica un número entre 1 y 200 $numero_aleatorio"
+        echo -e "\nIndica un número entre 1 y 200 $numero_aleatorio" # No te olvides de quitar esta variable
         read -p "Número: " numero
         intentos=$(( intentos - 1 ))
         if [[ $numero -lt $numero_aleatorio  ]]; then
